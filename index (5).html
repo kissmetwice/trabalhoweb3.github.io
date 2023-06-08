@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>campuslock (js)</title>
+  
+  <!-- Css externo -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+  <script src="script.js"></script>
+  
+</head>
+
+<body>
+  <!--body do site-->
+    <!--class conteiner que envolve toda estrutura do site-->
+    <div class="conteiner">
+
+      <!--header contém banner e nav-->
+      <header>
+
+        <!--banner do site-->
+        <div class="banner">
+          <h1>armários do bloco 3</h1>
+        </div>
+
+        <!--nav do site-->
+        <nav>
+          <ul>
+            <li><a href="#">voltar para o q acadêmico</a></li>
+            <li><a href="#">intranet</a></li>
+            <li><a href="#">verificar sua reserva</a></li>
+            <li><a href="#">problemas com seu armário</a></li>
+            <li><a href="#">falar com coordenador</a></li>
+            <li><a href="#">avisos</a></li>
+          </ul>
+        </nav>
+
+      </header>
+
+      <!--main vai conter principal-->
+      <main>
+
+        <!--janela inteira-->
+        <div class="janela-int">
+          <h3>escolha seu armário!</h3>
+        </div>
+
+        <!--principal vai conter 1 janela inteira, armarios e 2 janelas laterais-->
+        <div class="principal">
+
+          <!--classe que envolve todos os armários-->
+          <div class="cont-armarios">
+
+            <!--armários-->
+            <div class="armario">
+              <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+              <div class="stt" id="sttArm1"></div>
+              <button id class="btn-cor" onclick="alterarCor1()"> reservar </button>
+            </div>
+
+            <div class="armario">
+              <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+              <div class="stt" id="sttArm2"></div>
+              <button id class="btn-cor" onclick="alterarCor2()"> reservar</button>
+            </div>
+
+            <div class="armario">
+              <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+              <div class="stt" id="sttArm3"></div>
+              <button id class="btn-cor" onclick="alterarCor3()"> reservar</button>
+            </div>
+
+            <div class="armario">
+              <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+              <div class="stt" id="sttArm4"></div>
+              <button id class="btn-cor" onclick="alterarCor4()"> reservar</button>
+            </div>
+
+            <div class="armario">
+              <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+              <div class="stt" id="sttArm5"></div>
+              <button id class="btn-cor" onclick="alterarCor5()"> reservar</button>
+            </div>
+
+             <div class="armario">
+              <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+              <div class="stt" id="sttArm6"></div>
+              <button id class="btn-cor" onclick="alterarCor6()"> reservar</button>
+            </div>
+
+             <div class="armario">
+              <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+              <div class="stt" id="sttArm7"></div>
+              <button id class="btn-cor" onclick="alterarCor7()"> reservar</button>
+            </div>
+
+             <div class="armario">
+              <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+              <div class="stt" id="sttArm8"></div>
+              <button id class="btn-cor" onclick="alterarCor8()"> reservar</button>
+            </div>
+
+             <div class="armario">
+              <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+              <div class="stt" id="sttArm9"></div>
+              <button id class="btn-cor" onclick="alterarCor9()"> reservar</button>
+            </div>
+
+            <div class="armario">
+              <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+              <div class="stt" style="background-color: lightyellow;"></div>
+            </div>
+
+            <div class="armario">
+              <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+              <div class="stt" id="sttArm10"></div>
+              <button id class="btn-cor" onclick="alterarCor10()"> reservar</button>
+            </div>
+
+             <div class="armario">
+              <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+              <div class="stt" id="sttArm11"></div>
+              <button id class="btn-cor" onclick="alterarCor11()"> reservar</button>
+            </div>
+
+             <div class="armario">
+              <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+              <div class="stt" style="background-color: lightyellow;"></div>
+            </div>
+
+             <div class="armario">
+              <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+              <div class="stt" id="sttArm12"></div>
+              <button id class="btn-cor" onclick="alterarCor12()"> reservar</button>
+            </div>
+
+             <div class="armario">
+              <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+              <div class="stt" id="sttArm13"></div>
+              <button id class="btn-cor" onclick="alterarCor13()"> reservar</button>
+            </div>
+
+          </div>
+          <!--cont-armarios-->
+
+          <!--div janelas laterais, envolve as janelas esq e dir-->
+          <div class="janelas-lat">
+
+            <!--janela lateral esquerda-->
+            <div class="janela-esq">
+              <h3>bem vindo!</h3>
+              <p>olá, seja bem vindo ao sistema de armários do ifce!<br>
+                aqui você pode ver os armários disponíveis no bloco.<br>
+                caso queira reservar, entre em contato com a coordenação.<br>
+                por favor, selecione apenas 1 armário por vez. <br></p>
+            </div>
+
+            <!--janela lateral direita-->
+            <div class="janela-dir">
+              <h3>status</h3>
+              <ul>
+                <li>
+                  <div class="stt" style="background-color: lightgreen;"></div>disponível
+                </li>
+                <li>
+                  <div class="stt" style="background-color: lightcoral;"></div>ocupado
+                </li>
+                <li>
+                  <div class="stt" style="background-color: lightyellow;"></div>manutenção
+                </li>
+              </ul>
+            </div>
+            <!--janela direita-->
+          </div>
+          <!--class janelas-lat-->
+
+        </div>
+        <!--principal-->
+
+        <!--footer-->
+
+
+      </main>
+      <footer>
+        <ul>
+          <li><a href="#">contato</a></li>
+          <li><a href="#">termos de uso</a></li>
+          <li><a href="#">ajuda ao cliente</a></li>
+          <li><a href="#">sobre nós</a></li>
+        </ul>
+        <h5>made by pinkspace.com | © 2023 pinkspace.com - todos os direitos reservados. </h5>
+      </footer>
+    </div>
+    <!--class conteiner que envolve toda estrutura do site-->
+  </body>
+  <!--body do site-->
+
+</html>
+</body>
+
+</html>

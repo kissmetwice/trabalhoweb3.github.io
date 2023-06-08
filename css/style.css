@@ -1,0 +1,271 @@
+/*CORES USADAS NO SITE:
+#A79383,#FEF3D3,#ECD0B4,#F7F7EB,#E8D1C0*/
+
+/*conteiner envolve header, main e footer*/
+.conteiner{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  background-color: #F7F7EB;
+}
+
+
+/*banner do site dentro de header*/
+.banner{
+  background-color:#A79383;
+  height: 200px;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/*classe das imagens do banner*/
+.imgbanner{
+  height: 200px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+h1{
+  margin: 10px;
+  font-size: 75px;
+  color:#4e3927;
+}
+
+/*nav: background e envolve ul*/
+nav { 
+  background-color:#FEF3D3;
+  height: 40px;
+  display: flex;
+  margin: 0; 
+  border: 2px solid #dccdac;
+  border-radius: 20px;
+}
+
+/*ul: envolve todos os li*/
+nav ul { 
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+
+/*li: cada a uma caixa*/
+nav li {
+  margin: 10px;
+  padding: 3px;
+  border: 2px dashed #ECD0B4;
+  border-radius: 20px;
+}
+
+/*a: texto*/
+nav a {
+  color: #d2ab84;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 15px;
+}
+
+/*hover: quando o mouse passa em cima*/
+nav a:hover { 
+  text-decoration: underline;
+  color: #b5875a; 
+}
+
+/*main contém janela-int e principal*/
+main {
+  height: 1000px;
+  display: flex; 
+  flex-direction: column;
+  padding: 1%;
+  margin: 1% 0px;
+  background-color: #A79383;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.janela-int{
+  border-radius: 20px;
+  border: 2px solid #ECD0B4;
+  background-color: rgb(249, 220, 196);
+  height: 40px;
+  width: 100%;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.janela-int h3{
+  text-align: start;
+  margin: 1px 20px;
+  color: #b5875a;
+}
+
+/*principal contém janelas laterais e a classe armários*/
+.principal {
+  width: 99%;
+  height: 100%;
+  padding: 10px;
+  margin: 0px 10px;
+  border: 2px solid #dccdac;
+  background-color:#edd5ba;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.janelas-lat, .cont-armarios{
+  margin: 5% 15px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #fde2ce;
+  border: 5px dashed #A79383;
+  display: flex;
+  height: 90%;
+}
+
+.janelas-lat{
+  width: 20%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.janelas-lat h3{
+  color: #9b6b3b;
+}
+
+.janelas-lat p{
+  color: #5f3811;
+}
+
+.cont-armarios{
+  width: 70%;
+  padding: 15px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.armario{
+  flex-wrap: wrap;
+  border-radius: 10px;
+  border: 3px solid #d2ab84;
+  background-color: #ECD0B4;
+  width: 10%;
+  height: 20%;
+  margin: 3% 15px;
+  padding: 10px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgs{
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.stt{
+  width: 10px; 
+  height: 10px; 
+  margin-top: 5px;
+  border-radius: 50%;  
+  border: 2px solid #735c4a;
+  background-color: lightgreen;
+}
+
+.btn-cor {
+  background-color: #FEF3D3;
+  margin: 5px 1px;
+  padding: 5px;
+  border: 2px dashed #a5866f;
+  border-radius: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.janela-esq, .janela-dir {
+  width: 80%;
+  margin: 15px;
+  height: 95%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 3px solid #d2ab84;
+  background-color: #ECD0B4;
+  border-radius: 20px;
+}
+
+.janela-dir ul {
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  flex-direction: column;
+  margin: 0px;
+}
+
+.janela-dir li {
+  margin: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #5f3811;
+}
+
+ li .stt {
+  width: 15px; 
+  height: 15px; 
+  margin: 5px;
+  border-radius: 50%;  
+  border: 2px solid #735c4a;
+}
+
+
+footer{
+  height: 100px;
+  background-color:#FEF3D3;
+  border: 2px solid #dccdac;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer h5{
+  margin: 0px;
+  color: #cba37c;
+}
+
+footer ul { 
+  list-style: none;
+  display: flex;
+  padding: 5px;
+  flex-direction: row;
+  margin:10px;
+}
+
+footer li {
+  display: flex;
+  align-items: center;
+  border: 2px dashed #ECD0B4;
+  border-radius: 20px;
+  margin: 0px 15px;
+  padding: 5px;
+}
+
+footer a { /*texto*/
+  color:  #d2ab84;
+  text-decoration: none;
+}
